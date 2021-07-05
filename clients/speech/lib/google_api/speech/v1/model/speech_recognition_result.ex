@@ -29,11 +29,13 @@ defmodule GoogleApi.Speech.V1.Model.SpeechRecognitionResult do
 
   @type t :: %__MODULE__{
           :alternatives => list(GoogleApi.Speech.V1.Model.SpeechRecognitionAlternative.t()) | nil,
-          :channelTag => integer() | nil
+          :channelTag => integer() | nil,
+          :languageCode => string() | nil
         }
 
   field(:alternatives, as: GoogleApi.Speech.V1.Model.SpeechRecognitionAlternative, type: :list)
   field(:channelTag)
+  field(:languageCode)
 end
 
 defimpl Poison.Decoder, for: GoogleApi.Speech.V1.Model.SpeechRecognitionResult do
