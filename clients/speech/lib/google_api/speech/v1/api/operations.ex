@@ -74,7 +74,7 @@ defmodule GoogleApi.Speech.V1.Api.Operations do
     request =
       Request.new()
       |> Request.method(:get)
-      |> Request.url("/v1/operations/{+name}", %{
+      |> Request.url("/v1p1beta1/operations/{+name}", %{
         "name" => URI.encode(name, &URI.char_unreserved?/1)
       })
       |> Request.add_optional_params(optional_params_config, optional_params)

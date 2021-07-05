@@ -43,7 +43,7 @@ defmodule GoogleApi.Speech.V1.Api.Speech do
       *   `:quotaUser` (*type:* `String.t`) - Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
       *   `:uploadType` (*type:* `String.t`) - Legacy upload protocol for media (e.g. "media", "multipart").
       *   `:upload_protocol` (*type:* `String.t`) - Upload protocol for media (e.g. "raw", "multipart").
-      *   `:body` (*type:* `GoogleApi.Speech.V1.Model.LongRunningRecognizeRequest.t`) - 
+      *   `:body` (*type:* `GoogleApi.Speech.V1.Model.LongRunningRecognizeRequest.t`) -
   *   `opts` (*type:* `keyword()`) - Call options
 
   ## Returns
@@ -75,7 +75,7 @@ defmodule GoogleApi.Speech.V1.Api.Speech do
     request =
       Request.new()
       |> Request.method(:post)
-      |> Request.url("/v1/speech:longrunningrecognize", %{})
+      |> Request.url("/v1p1beta1/speech:longrunningrecognize", %{})
       |> Request.add_optional_params(optional_params_config, optional_params)
       |> Request.library_version(@library_version)
 
@@ -102,7 +102,7 @@ defmodule GoogleApi.Speech.V1.Api.Speech do
       *   `:quotaUser` (*type:* `String.t`) - Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
       *   `:uploadType` (*type:* `String.t`) - Legacy upload protocol for media (e.g. "media", "multipart").
       *   `:upload_protocol` (*type:* `String.t`) - Upload protocol for media (e.g. "raw", "multipart").
-      *   `:body` (*type:* `GoogleApi.Speech.V1.Model.RecognizeRequest.t`) - 
+      *   `:body` (*type:* `GoogleApi.Speech.V1.Model.RecognizeRequest.t`) -
   *   `opts` (*type:* `keyword()`) - Call options
 
   ## Returns
@@ -134,7 +134,7 @@ defmodule GoogleApi.Speech.V1.Api.Speech do
     request =
       Request.new()
       |> Request.method(:post)
-      |> Request.url("/v1/speech:recognize", %{})
+      |> Request.url("/v1p1beta1/speech:recognize", %{})
       |> Request.add_optional_params(optional_params_config, optional_params)
       |> Request.library_version(@library_version)
 

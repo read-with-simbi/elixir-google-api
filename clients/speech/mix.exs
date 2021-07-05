@@ -18,7 +18,7 @@
 defmodule GoogleApi.Speech.Mixfile do
   use Mix.Project
 
-  @version "0.23.2"
+  @version "0.23.2-beta-0.0.5"
 
   def project() do
     [
@@ -30,7 +30,7 @@ defmodule GoogleApi.Speech.Mixfile do
       description: description(),
       package: package(),
       deps: deps(),
-      source_url: "https://github.com/googleapis/elixir-google-api/tree/master/clients/speech"
+      source_url: "https://github.com/read-with-simbi/elixir-google-api/tree/master/clients/speech"
     ]
   end
 
@@ -54,6 +54,7 @@ defmodule GoogleApi.Speech.Mixfile do
 
   defp package() do
     [
+      name: "google_api_speech_beta",
       files: ["lib", "mix.exs", "README*", "LICENSE"],
       maintainers: ["Jeff Ching", "Daniel Azuma"],
       licenses: ["Apache 2.0"],
